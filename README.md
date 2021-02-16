@@ -63,16 +63,14 @@
 <pre>
 
 <code>
-
 html = driver.page_source
     soup = BeautifulSoup(html, 'html.parser')
 
     title = soup.select('#bmunStart > h2')
     sub_title = soup.select('#bmunStart > p')
     content = soup.select('#areaDetail > div.page_area > div')
-
-
-
+    
+    
 </code>
 
 </pre>
