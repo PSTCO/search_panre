@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>tabletalbe</title>
+  </head>
+  <body>
+    
+    <% var arr1 = data.toString().split('\n') %>
+    <h3><%= arr1 %></h3>
+    <br>
+    <!--
+    <%= typeof(data) %>
+    -->
+    <table class="table col-md-4">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <th scope="row">1</th>>
+              <% for(var i=0; i<arr1.length; i++) { %>
+                <td><%= arr1[i] %></td>
+              <% } %>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
