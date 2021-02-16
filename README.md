@@ -1,6 +1,6 @@
 # 문서 벡터를 이용한 판례 검색 
 
-​
+
 
 # 제목 1
 
@@ -14,9 +14,7 @@
 
 ###### 제목 6
 
-​
 
-​
 
 이텔릭체는 *별표(asterisks)* 혹은 _언더바(underscore)_ 
 
@@ -28,7 +26,7 @@
 
 <u>밑줄</u>은 `<u>밑줄글씨</u>`를 사용 
 
-​
+
 
 1. 순서가 필요한 목록
 
@@ -54,9 +52,6 @@
 
    + 더하기(plus sign)
 
-​
-
-​
 
 > This is a first blockqute.
 
@@ -64,9 +59,6 @@
 
 >   >   > This is a third blockqute.
 
-​
-
-​
 
 <pre>
 
@@ -79,24 +71,20 @@ html = driver.page_source
     sub_title = soup.select('#bmunStart > p')
     content = soup.select('#areaDetail > div.page_area > div')
 
-​
+
 
 </code>
 
 </pre>
-
-​
-
 ```
-
 import time
 import pandas as pd
 
 from selenium import webdriver
 from bs4 import BeautifulSoup
-
 ```
-​
+
+
 * * *
 
 ***
