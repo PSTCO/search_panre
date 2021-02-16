@@ -1,19 +1,20 @@
 # 문서 벡터를 이용한 판례 검색 시스템
 
-- - -
 
-## 사용 기술 :
+
+
+## 사용 기술
    - 파이썬(Python)
    - PHP
    - 기계학습(Machine Learning)
-   - 아파치 웹서버(XAMPP)
+   - 아파치 HTTP서버(XAMPP)
    - 워드 투 벡터(Word2Vec)
    - 형태소 분석(Komoran)
 
 
 
 ## 프로그램의 흐름
-
+![image1](C:\Users\admin\Desktop\그림1.png)
 
 ​
 
