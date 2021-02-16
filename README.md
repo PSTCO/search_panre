@@ -14,7 +14,7 @@
 
 
 ## 프로그램의 흐름
-![image1](C:\Users\admin\Desktop\그림1.png)
+![그림1](https://user-images.githubusercontent.com/52062016/108025865-9abf3a80-706a-11eb-985f-d45be5bc860b.png)
 
 ​
 
