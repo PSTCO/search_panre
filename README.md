@@ -1,7 +1,7 @@
 # HitChat
 
-한국IT 챗봇 서비스
 
+문서 벡터를 이용한 판례 검색 
 ​
 
 # 제목 1
@@ -74,13 +74,12 @@
 
 <code>
 
-public class BootSpringBootApplication {
+html = driver.page_source
+    soup = BeautifulSoup(html, 'html.parser')
 
-public static void main(String[] args) {
-
-   System.out.println("Hello, Honeymon");
-
-}
+    title = soup.select('#bmunStart > h2')
+    sub_title = soup.select('#bmunStart > p')
+    content = soup.select('#areaDetail > div.page_area > div')
 
 ​
 
@@ -94,15 +93,11 @@ public static void main(String[] args) {
 
 ```
 
-public class BootSpringBootApplication {
+import time
+import pandas as pd
 
-   public static void main(String[] args) {
-
-      System.out.println("Hello, Honeymon");
-
-   }
-
-}
+from selenium import webdriver
+from bs4 import BeautifulSoup
 
 ```
 
