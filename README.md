@@ -83,8 +83,6 @@ html = driver.page_source
 
 ​
 
-}
-
 </code>
 
 </pre>
