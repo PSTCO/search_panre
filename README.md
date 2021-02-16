@@ -1,7 +1,5 @@
-# HitChat
+# 문서 벡터를 이용한 판례 검색 
 
-
-문서 벡터를 이용한 판례 검색 
 ​
 
 # 제목 1
@@ -98,9 +96,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 
 ```
-
 ​
-
 * * *
 
 ***
