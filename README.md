@@ -5,6 +5,7 @@
 
 ## 사용 기술
    - 파이썬(Python)
+   - 크롤링(Selenium, BeautifulSoup4)
    - PHP
    - 기계학습(Machine Learning)
    - 아파치 HTTP서버(XAMPP)
@@ -12,9 +13,14 @@
    - 형태소 분석(Komoran)
 
 
+## 사용 데이터
+   - 대한민국 법원 종합법률정보에서 제공하는 2011.01.01~2021.01.01 기간의 판례 약 15,000개 수집
+   - https://glaw.scourt.go.kr/
+
+
 
 ## 프로그램의 흐름
-![image1](C:\Users\admin\Desktop\그림1.png)
+![image1](/images/그림1.png)
 
 ​
 

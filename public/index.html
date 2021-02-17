@@ -10,13 +10,16 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <form method='post' action='/list'>
+    <div class="jumbotron text-center col-md-12"> 
+      <h3>판례 검색 시스템</h3>
+    </div>
+
+    <form method='post' action='show.html'>
       <div class="form-group">
-        <label for="exampleFormControlTextarea1">Example textarea</label>
-        <textarea class="form-control col-md-4" rows="3" name='text1'></textarea>
+        <textarea class="form-control col-md-12" rows="7" name='text1'></textarea>
       </div>
-      
-      <button type="submit" class="btn btn-primary" value = '전송' name=''>실 행</button><br><br>
+      <!-- <?php exec('python C:\xampp\htdocs\public\psce\ctest2.py') ?> -->
+      <button type="submit" class="btn btn-primary col-md-12" value = '전송' name=''>검 색</button><br><br>
     </form>
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

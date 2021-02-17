@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <title>검색 결과</title>
+  </head>
+  <body>
+  <div class="shadow-sm p-3 mb-5 bg-white rounded"><h3>검색 결과</h3></div>
+    <?php $input = $_POST["text1"];
+      exec('python C:\xampp\htdocs\public\psce\search.py '.$input);
+
+      //echo '<br>';
+      echo '<table class="table table-striped col-md-12">';
+          echo '<thead>';
+            echo '<tr>';
+              echo '<th scope="col">#</th>';
+              echo '<th scope="col">제목</th>';
+              echo '<th scope="col">부제목</th>';
+              echo '<th scope="col">바로가기</th>';
+            echo '</tr>';
+          echo '</thead>';
+          echo '<tbody>';
+
+      $fp = fopen("foo.txt", "r") or die("파일을 열 수 없습니다！");
+
+      $num = 1;
+      while( !feof($fp) ) {
+        //echo fgets($fp);
+        echo '<tr>';
+        echo '<th scope="row">'.$num.'</th>';
+        echo '<td>'.fgets($fp).'</td>';//제목
+        echo '<td>'.fgets($fp).'</td>';//부제목
+        echo '<td><a href='.fgets($fp).' target="_blank">링크</a></td>';//링크        
+        echo '</tr>';
+        //echo '<br>';
+        $num = $num+1;
+      }
+      fclose($fp);
+    ?>
+        </tbody>
+    </table>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
