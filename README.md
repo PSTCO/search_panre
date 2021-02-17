@@ -20,9 +20,12 @@
 
 
 ## 프로그램의 흐름
+<<<<<<< HEAD
 ![image1](/images/그림1.png)
+=======
+![그림1](https://user-images.githubusercontent.com/52062016/108025999-d8bc5e80-706a-11eb-8db1-6dde53460106.png)
+>>>>>>> c0d39483e1f924322e6237a5083c889581287eef
 
-​
 
 이텔릭체는 *별표(asterisks)* 혹은 _언더바(underscore)_ 
 
