@@ -20,8 +20,7 @@
 
 
 ## 프로그램의 흐름
-<<<<<<< HEAD
-![그림1](https://user-images.githubusercontent.com/52062016/108025999-d8bc5e80-706a-11eb-8db1-6dde53460106.png)
+![설명](https://user-images.githubusercontent.com/52062016/108168241-50a58a00-713a-11eb-8305-2ff6f0e2a979.png)
 
 
 
