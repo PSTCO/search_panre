@@ -23,7 +23,7 @@
 
 ## 프로그램의 흐름
 
-![설명](https://user-images.githubusercontent.com/52062016/108168241-50a58a00-713a-11eb-8305-2ff6f0e2a979.png)
+![설명2](https://user-images.githubusercontent.com/52062016/108313670-10a6db80-71fc-11eb-9499-bff83b33d6e4.png)
 
 
 \\<!--
