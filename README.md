@@ -14,11 +14,11 @@
 
 ## 사용 데이터
    - 대한민국 법원 종합법률정보에서 제공하는 2011.01.01~2021.01.01 기간의 판례 약 15,000개 수집
-   - https://glaw.scourt.go.kr/
+      - https://glaw.scourt.go.kr/  
 
    - 사전 학습된 Word2Vec모델
-   - https://github.com/Kyubyong/wordvectors
-   - 다운로드 : https://drive.google.com/file/d/0B0ZXk88koS2KbDhXdWg1Q2RydlU/view
+      - https://github.com/Kyubyong/wordvectors
+      - 다운로드 : https://drive.google.com/file/d/0B0ZXk88koS2KbDhXdWg1Q2RydlU/view
 
 
 
