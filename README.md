@@ -4,12 +4,11 @@
 
 
 ## 사용 기술
-   - 파이썬(Python)
+   - 파이썬, PHP
    - 크롤링(Selenium, BeautifulSoup4)
-   - PHP
-   - 기계학습(Machine Learning)
-   - 아파치 HTTP서버(XAMPP)
-   - 워드 투 벡터(Word2Vec)
+   - 기계학습 
+   - 아파치 HTTP서버
+   - 워드 투 벡터
    - 형태소 분석(Komoran)
 
 
@@ -17,14 +16,14 @@
    - 대한민국 법원 종합법률정보에서 제공하는 2011.01.01~2021.01.01 기간의 판례 약 15,000개 수집
    - https://glaw.scourt.go.kr/
 
+   - 사전 학습된 Word2Vec모델
+   - https://github.com/Kyubyong/wordvectors
+   - 다운로드 : https://drive.google.com/file/d/0B0ZXk88koS2KbDhXdWg1Q2RydlU/view
+
 
 
 ## 프로그램의 흐름
-<<<<<<< HEAD
-![image1](/images/그림1.png)
-=======
 ![그림1](https://user-images.githubusercontent.com/52062016/108025999-d8bc5e80-706a-11eb-8db1-6dde53460106.png)
->>>>>>> c0d39483e1f924322e6237a5083c889581287eef
 
 
 이텔릭체는 *별표(asterisks)* 혹은 _언더바(underscore)_ 

@@ -11,10 +11,11 @@
   </head>
   <body>
   <div class="shadow-sm p-3 mb-5 bg-white rounded"><h3>검색 결과</h3></div>
-    <?php $input = $_POST["text1"];
+    <?php $input = $_POST["text1"];//index에서 넘겨받은 입력 값
       exec('python C:\xampp\htdocs\public\psce\search.py '.$input);
 
       //echo '<br>';
+      //결과를 표로 출력
       echo '<table class="table table-striped col-md-12">';
           echo '<thead>';
             echo '<tr>';
@@ -25,7 +26,7 @@
             echo '</tr>';
           echo '</thead>';
           echo '<tbody>';
-
+      //foo.txt는 파이썬 파일의 출력을 저장한 파일
       $fp = fopen("foo.txt", "r") or die("파일을 열 수 없습니다！");
 
       $num = 1;
