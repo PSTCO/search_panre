@@ -9,12 +9,11 @@ import warnings
 import gensim
 from gensim.models import KeyedVectors
 from sklearn.metrics.pairwise import cosine_similarity
-from konlpy.tag import Okt
 from konlpy.tag import Komoran
 
-loaded_model = gensim.models.Word2Vec.load('ko.bin') # 모델 불러오기
+loaded_model = gensim.models.Word2Vec.load('ko.bin')#워드 임베딩 파일 불러오기
 df = pd.read_csv('pancr4.csv')#판례불러오기
-np_load = np.load('tarr4.npy')#벡터값 배열 불러오기
+np_load = np.load('tarr4.npy')#벡터값 불러오기
 
 #불용어 목록 불러오기
 f = open("sws2.txt", 'r', encoding='utf-8')
@@ -26,11 +25,13 @@ swords = []
 for l in lines:
     swords.append(l.rstrip('\n'))
 
+#사용자의 입력처리를 담당
 def input_story(story1):
     global df
     global np_load
     #story = input('입력 : ')
     story = story1
+    #한글만 추출
     story = re.compile('[^ㄱ-ㅎㅏ-ㅣ가-힣 ]+').sub('',story)
     
     okt = Komoran()##
@@ -39,7 +40,7 @@ def input_story(story1):
     temp_X = okt.morphs(story) # 토큰화
     temp_X = [word for word in temp_X if not word in swords] # 불용어 제거
     tokenized_data.append(temp_X)
-    
+    #검색을 위한 임의의 데이터프레임 생성, 삽입
     if(df.title[len(df)-1] == '검색용'):
         df = df.drop(len(df)-1) 
         
@@ -56,6 +57,7 @@ def input_story(story1):
 #print(len(np_load))
 #print(df.shape)
 
+#사용자가 입력한것까지 포함해서 벡터값 계산
 def vectors(document_list):
     document_embedding_list = []
 
@@ -81,16 +83,15 @@ def vectors(document_list):
     # 각 문서에 대한 문서 벡터 리스트를 리턴
     return document_embedding_list
 
-
+#추천함수
 def recommendations(title):
     books = df[['title','sub_title', 'link']]
 
-    # 책의 제목을 입력하면 해당 제목의 인덱스를 리턴받아 idx에 저장.
     indices = pd.Series(df.index, index = df['title']).drop_duplicates()    
     idx = indices[title]
     #print('idx : ',idx)
 
-    # 입력된 책과 줄거리(document embedding)가 유사한 책 5개 선정.
+    # 유사한 5개 선정.
     sim_scores = list(enumerate(cosine_similarities[idx]))
     #print('s1 : ',sim_scores)
     sim_scores = sorted(sim_scores, key = lambda x: x[1], reverse = True)
@@ -98,16 +99,18 @@ def recommendations(title):
     sim_scores = sim_scores[1:6]
     #print('s3 : ',sim_scores)
 
-    # 가장 유사한 책 5권의 인덱스
+    #유사한5 인덱스
     book_indices = [i[0] for i in sim_scores]
     #print('bi', book_indices)
 
     # 전체 데이터프레임에서 해당 인덱스의 행만 추출. 5개의 행을 가진다.
     recommend = books.iloc[book_indices].reset_index(drop=True)
     #print(type(recommend))
+
+    #이전의 파일내용 지우기
     with open("foo.txt", "w", encoding='utf-8') as f:
         f.write('')
-
+    #상위 5개의 내용 파일에 입력
     for i in range(len(recommend)):
         with open("foo.txt", "a", encoding='utf-8') as f:
             f.write(str(recommend.title[i])+'\n')
