@@ -9,7 +9,7 @@
    - 기계학습 
    - 아파치 HTTP서버
    - 워드 투 벡터
-   - 형태소 분석(Komoran)
+   - 형태소 분석(Komoran)  
 
 
 ## 사용 데이터
@@ -17,7 +17,7 @@
       - https://glaw.scourt.go.kr/  
    - 사전 학습된 Word2Vec모델
       - https://github.com/Kyubyong/wordvectors
-      - 다운로드 : https://drive.google.com/file/d/0B0ZXk88koS2KbDhXdWg1Q2RydlU/view
+      - 다운로드 : https://drive.google.com/file/d/0B0ZXk88koS2KbDhXdWg1Q2RydlU/view  
 
 
 
@@ -26,6 +26,7 @@
 ![설명](https://user-images.githubusercontent.com/52062016/108168241-50a58a00-713a-11eb-8305-2ff6f0e2a979.png)
 
 
+\\<!--
 이텔릭체는 *별표(asterisks)* 혹은 _언더바(underscore)_ 
 
 두껍게는 **별표(asterisks)** 혹은 __언더바(underscore)__ 
@@ -109,3 +110,4 @@ public class BootSpringBootApplication {
 - - -
 
 ---------------------------------------
+-->
