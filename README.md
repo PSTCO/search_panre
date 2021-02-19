@@ -4,12 +4,10 @@
 
 
 ## 사용 기술
-   - 파이썬, PHP
-   - 크롤링(Selenium, BeautifulSoup4)
+   - 크롤링
    - 기계학습 
-   - 아파치 HTTP서버
-   - 워드 투 벡터
-   - 형태소 분석(Komoran)  
+   - 웹 서버
+   - 형태소 분석
 
 
 ## 사용 데이터
@@ -28,18 +26,19 @@
 ## 필요 환경
 
 - 공통
-   - Pandas
+   - Python(3.8.5)
+   - PHP(Windows : 8.0.2, Linux : 7.4.3) 
+   - Pandas(Windows : 1.1.3, Linux : 0.25.3)
 - 크롤링
-   - Selenium
-   - BeautifulSoup
+   - Selenium(3.141.0)
+   - BeautifulSoup(4.6.0)
 - 자연어 처리
-   - Numpy
-   - Konlpy
-   - Gensim
-   - Scikit-learn
+   - Numpy(1.19.x)
+   - Konlpy(0.5.2)
+   - Gensim(3.8.3)
+   - Scikit-learn(0.24.x)
 - 웹 서버
-   - XAMPP Apache HTTP Server(Windows 10)
-   - Apache HTTP Server(Ubuntu Linux 20.04.1)
+   - Apache HTTP Server(2.4.x)
 
 
 
