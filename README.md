@@ -25,8 +25,24 @@
 
 ![설명2](https://user-images.githubusercontent.com/52062016/108313670-10a6db80-71fc-11eb-9499-bff83b33d6e4.png)
 
+## 필요 환경
 
-\\<!--
+- 공통
+   - Pandas
+- 크롤링
+   - Selenium
+   - BeautifulSoup
+- 자연어 처리
+   - Numpy
+   - Konlpy
+   - Gensim
+   - Scikit-learn
+- 웹 서버
+   - XAMPP Apache HTTP Server(Windows 10)
+   - Apache HTTP Server(Ubuntu Linux 20.04.1)
+
+
+
 이텔릭체는 *별표(asterisks)* 혹은 _언더바(underscore)_ 
 
 두껍게는 **별표(asterisks)** 혹은 __언더바(underscore)__ 
@@ -110,4 +126,3 @@ public class BootSpringBootApplication {
 - - -
 
 ---------------------------------------
--->
