@@ -46,4 +46,8 @@
 2. pprocessing.py 파일로 데이터를 가공한다.
 3. public 폴더를 웹 서버 폴더에 복사한다.
 4. 웹 서버를 실행하고 index.html에 접속한다.
-5. 원하는 사연을 입력하고 검색결과를 확인한다.
+5. 원하는 사연을 입력하고 검색결과를 확인한다.  
+
+## 실행 결과
+![02](https://user-images.githubusercontent.com/52062016/108676970-5d582280-752c-11eb-83dc-6bbed118e138.PNG)
+![03](https://user-images.githubusercontent.com/52062016/108677004-6648f400-752c-11eb-9ed0-b44060e8b2bf.PNG)
