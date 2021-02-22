@@ -49,5 +49,5 @@
 5. 원하는 사연을 입력하고 검색결과를 확인한다.  
 
 ## 실행 결과
-![02](https://user-images.githubusercontent.com/52062016/108676970-5d582280-752c-11eb-83dc-6bbed118e138.PNG)
-![03](https://user-images.githubusercontent.com/52062016/108677004-6648f400-752c-11eb-9ed0-b44060e8b2bf.PNG)
+![02 - 복사본](https://user-images.githubusercontent.com/52062016/108677301-d35c8980-752c-11eb-964a-083cd310f716.PNG)
+![03 - 복사본](https://user-images.githubusercontent.com/52062016/108677306-d48db680-752c-11eb-8a46-c032ab8bd7d2.PNG)
