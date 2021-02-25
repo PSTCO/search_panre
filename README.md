@@ -51,3 +51,7 @@
 ## 실행 결과
 ![02 - 복사본](https://user-images.githubusercontent.com/52062016/108677301-d35c8980-752c-11eb-964a-083cd310f716.PNG)
 ![03 - 복사본](https://user-images.githubusercontent.com/52062016/108677306-d48db680-752c-11eb-8a46-c032ab8bd7d2.PNG)
+
+## 참고 자료
+딥 러닝을 이용한 자연어 처리 입문 - 문서 벡터를 이용한 추천 시스템
+https://wikidocs.net/102705
